@@ -1,0 +1,100 @@
+::selection {
+    color: rgb(255, 0, 0);
+    background: rgb(0, 0, 255);
+}
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+body {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: antiquewhite;
+}
+/*#bigth {
+    width:50%;
+}*/
+p{
+    font-family: 'FanwoodTextRegular', serif;
+}
+h1, h2 {
+    text-align: center;
+    font-family: 'OxygenSansSansBookOblique', sans-serif;
+}
+h1 {
+    color: rgb(255, 0, 102);
+    margin-top: 70px;
+}
+h2 {
+    color: #cc33ff;
+}
+h3 {
+    color: hsl(138, 100%, 50%);
+    font-family: 'OxygenSansSansBookOblique', sans-serif;
+}
+h1::first-letter {
+    font-size: 101%;
+}
+iframe[src="https://www.youtube.com/embed/tRKst3Uku-E"] {
+    width: 560px;
+    height: 315px;
+}
+a {
+    color: 	hsl(0, 100%, 50%);
+}
+a:visited {
+    color: 	rgb(0, 0, 255);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #996633;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'OxygenSansSansBookOblique', sans-serif;
+}
+li {
+    margin-bottom: 0px;
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li > a:visited {
+    color: white;
+}
+li > a:hover:not(.active) {
+    background-color: hsl(30, 50%, 25%);
+}
+a:visited.active, a.active {
+    background-color: #ffff00;
+    color: black;
+}
+img {
+    max-width: 100%;
+}
+@media all and (max-width: 500px) {
+	table{
+		font-size: 5px;
+	}
+}
+nav {
+    background-color: rgb(192, 21, 214);
+}
+canvas {
+    margin-top: 10%;
+    margin-left: 35%;
+    background-color: rgb(20, 100, 20);
+}
+
