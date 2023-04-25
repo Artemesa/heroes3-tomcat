@@ -1,3 +1,4 @@
+DROP DATABASE IT EXISTS heroes3;
 CREATE DATABASE heroes3;
 USE heroes3;
 CREATE TABLE potrebiteli(
