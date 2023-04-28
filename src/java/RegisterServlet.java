@@ -29,17 +29,17 @@ public class RegisterServlet extends HttpServlet {
                     </html>
                     """;
         String db = "jdbc:mariadb://localhost/heroes3";
-        String reqName;
-        String reqPass;
-        String reqMail;
+        String reqName = request.getParameter("name");
+        String reqPass = request.getParameter("pass");
+        String reqMail = request.getParameter("mail");
         try {
             Class.forName("org.mariadb.jdbc.Driver");
             Connection conn = DriverManager.getConnection(db);
             Statement stmt = conn.createStatement();
             String query = """
                    INSERT INTO potrebiteli(name, pass, mail)
-                   VALUES (\"rtyu\", \"wer\", \"sdfg\");
-                            """;
+                   VALUES (\"%s", \"%s\", \"%s\");
+                            """.formatted(reqName, reqPass, reqMail);
             ResultSet rs = stmt.executeQuery(query);
         } catch (SQLException ex) {
             Logger.getLogger(RegisterServlet.class.getName()).log(Level.SEVERE, null, ex);
