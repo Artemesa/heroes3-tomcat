@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS heroes3;
 CREATE DATABASE heroes3;
 USE heroes3;
 CREATE TABLE potrebiteli(
-id INT,
+id INT AUTO_INCREMENT PRIMARY KEY,
 name Varchar(255),
 pass Varchar(255),
 mail Varchar(255));
