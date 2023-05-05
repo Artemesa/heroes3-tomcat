@@ -13,8 +13,8 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@WebServlet(urlPatterns = {"/LoginServlet"})
-public class LoginServlet extends HttpServlet {
+@WebServlet(urlPatterns = {"/ItemServlet"})
+public class ItemServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -22,7 +22,7 @@ public class LoginServlet extends HttpServlet {
                     <!DOCTYPE>
                     <html>
                         <head>
-                            <title>Login</title>
+                            <title>Items</title>
                         </head>
                         <body>
                             <p>SUIIIIII</p>
@@ -54,9 +54,9 @@ public class LoginServlet extends HttpServlet {
                     response.sendRedirect("index.html");
             }
         } catch (SQLException ex) {
-            Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ItemServlet.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ItemServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
         response.getWriter().println(r);
         
